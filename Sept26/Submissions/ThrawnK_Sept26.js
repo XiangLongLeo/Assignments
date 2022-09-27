@@ -37,26 +37,18 @@ function main() {
 }
 
 function solve() {
-    // Declare variables N and M.
     var N, M;
-    // Read the integers from the standard input.
     [N, M] = readline().split(' ').map(x => parseInt(x));
 
-    // Declare array `C`.
     var C = [];
-    // Read integers from the standard input and save them in the array `C`.
     C = readline().split(' ').map(x => parseInt(x));
 
-    // Declare a variable for sum and set it to 0.
     var sum = 0;
-    // Loop through vector `C` and sum its values.
     for (var i = 0; i < N; i++) {
         sum += C[i];
     }
 
-    // Compute the value of the sum modulo M.
-    var modulo = sum % M;
+    var result = sum % M;
 
-    // Print the result onto the standard output.
-    process.stdout.write(modulo + '\n');
+    process.stdout.write(result + '\n');
 }
