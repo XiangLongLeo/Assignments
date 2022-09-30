@@ -50,6 +50,6 @@ function solve() {
 	//compute here
     var sum=0;
     for(var i = 0;i<N;i++)  sum+=C[i];
-    sum/=M;
-	process.stdout.write(sum,"\n");
+    sum%=M;
+	process.stdout.write(sum+"\n");
 }
