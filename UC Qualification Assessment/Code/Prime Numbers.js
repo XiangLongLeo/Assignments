@@ -10,8 +10,9 @@ function main() {
     //fill this array with the computed prime numbers
     var primes = [];
 
-
     //output the calculated numbers, do not modify
     for (let i = 0; i < primes.length; i++)
         console.log(primes[i]);
 }
+
+main()
