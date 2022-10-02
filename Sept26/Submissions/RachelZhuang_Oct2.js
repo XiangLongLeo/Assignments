@@ -51,3 +51,4 @@ function solve() {
     var result = sum % M;
 
     process.stdout.write(result + '\n');
+}
