@@ -41,15 +41,15 @@ function solve() {
     var N, M;
     // Read the integers from the standard input.
     [N, M] = readline().split('').map(x => parseInt(x));
-    
+
     // Declare array `C`.
     var C = [];
     C = readline().split('').map(x => parseInt(x));
 
     //compute here
-    
+
     var sum = 0;
-    for (var i = 0; i < N; i+=1) {
+    for (var i = 0; i < N; i += 1) {
         sum += C[i];
     }
 

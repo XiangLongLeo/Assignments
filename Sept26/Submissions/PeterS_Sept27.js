@@ -46,10 +46,10 @@ function solve() {
 	var C;
 	// Read integers from the standard input and save them in the array `C`.
 	C = readline().split(' ').map(x => parseInt(x));
-	
+
 	//compute here
-    var sum=0;
-    for(var i = 0;i<N;i++)  sum+=C[i];
-    sum%=M;
-	process.stdout.write(sum+"\n");
+	var sum = 0;
+	for (var i = 0; i < N; i++)  sum += C[i];
+	sum %= M;
+	process.stdout.write(sum + "\n");
 }
